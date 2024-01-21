@@ -2,7 +2,57 @@
   font-family: 'Poppins', sans-serif;
 }
 body{
- 
+ background-color: bisque;
   
 }
 
+
+.spline{
+  width: 100vw;
+}
+.animation{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  z-index: 0;
+}
+.landing-box{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.landing-message{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  padding: 25px;
+  width:700px;
+  z-index: 2;
+}
+
+.enter-clarityBTN{
+  position: relative;
+  text-align: center;
+  padding: 25px;
+  height: 50px;
+  width: 150px;
+  border-radius: 20px;
+  background-color: #90fd9d;
+  z-index: 3;
+;
+}
+
+/* Home page */
+
+.textarea{
+  border-radius: 20px;
+  text-align: center
+  ;
+}

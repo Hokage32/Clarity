@@ -12,7 +12,7 @@ const prompt = {
   temperature: 0.7,
   max_tokens: 300,
   messages: [
-    { role: "system", content: "You are a helpful assistant who helps people with their mental stressors." },
+    { role: "system", content: "You are a helpful assistant who helps people with their mental stressors. You will only answer problems about what the user are struggling with mentally. If you encounter a question that does not relate to mental health or stress, simply tell the user that your main use is to help with mental health" },
     { role: "user", content: `${message}` },
   ],
 };

@@ -7,13 +7,12 @@ const Landing = () => {
     <div>
       <div className="landing-box">
         <div className="animation">
-        <Spline className="spline" scene="https://prod.spline.design/NBNNZWPGBQgK7TB3/scene.splinecode"/>
+        <Spline className="spline" scene="https://prod.spline.design/1MZpuHc45d2zqTeC/scene.splinecode"/>
 
-         <Link to={'/home'}>
-         <button>Enter Clarity</button>
-         </Link>
+         
          </div>
         <div className="landing-message">
+          
           <h1>Welcome to Clarity</h1>
 
           <h2>
@@ -23,21 +22,13 @@ const Landing = () => {
             companion for a focused and calm mind.
           </h2>
 
-         
+         <Link to={'/home'}>
+         <button className="enter-clarityBTN">Enter Clarity</button>
+         </Link>
         </div>
         
       </div>
-      <div className="landing-about-box">
-        <div className="landing-about">
-          <h2>Lorem Ipsum</h2>
-        </div>
-        <div className="landing-about">
-          <h2>Lorem Ipsum</h2>
-        </div>
-        <div className="landing-about">
-          <h2>Lorem Ipsum</h2>
-        </div>
-      </div>
+      
     </div>
   );
 };

@@ -10,7 +10,7 @@ const Home = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    setMessage('')
     console.log(message);
     axios
       .post(
@@ -35,15 +35,17 @@ const Home = () => {
   return (
     <div>
       {isModelOpen && <Model isModelOpen={isModelOpen}/>}
-      <form action="" onSubmit={handleSubmit}>
+      <form action="" onSubmit={handleSubmit} className="textarea">
         <textarea
           name=""
           id=""
-          cols="30"
-          rows="10"
+          cols="50"
+          
           placeholder="What is on your mind?"
+          className="textarea"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
+          onSubmit={handleSubmit}
         ></textarea>
         <button>Submit</button>
       </form>
